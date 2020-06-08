@@ -6,7 +6,7 @@
                 <div class="col-md-3 col-sm-6 order-sm-1">
                     <div class="widget address"><a href="http://travelgo.iranneginhotel.ir/index.html" class="footer-logo mb-3 d-block">
                         <!-- SVG Logo Start -->
-                        <img src="./index_files/logo-footer.png">
+                        <img src="/index_files/logo-footer.png">
                         <!-- SVG Logo End -->
                     </a>
                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک

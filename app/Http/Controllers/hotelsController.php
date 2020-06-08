@@ -23,10 +23,7 @@ class hotelsController extends Controller
         // dd($response);
         $rec = $response->data;
 
-        $city = city();
-        $hotelTypes = hotelTypes();
-        $hotelSpecifications = hotelSpecifications();
-        return view('hotel/hotels',compact('rec','city','hotelTypes','hotelSpecifications'));
+        return view('hotel/hotels',compact('rec'));
 
     }
     
