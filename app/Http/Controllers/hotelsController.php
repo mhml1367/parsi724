@@ -23,10 +23,14 @@ class hotelsController extends Controller
         // dd($response);
         $rec = $response->data;
 
-        return view('hotel/hotels',compact('rec'));
+
+        $city = city();
+        $hotelTypes = hotelTypes();
+        $hotelSpecifications = hotelSpecifications();
+        return view('hotel/hotels',compact('rec','city','hotelTypes','hotelSpecifications'));
 
     }
-    
+
     public function Hotel($Hotels)
     {
     if (request()->input('DateFrom') == null) {
@@ -63,7 +67,7 @@ class hotelsController extends Controller
         $rec = $response->data;
         return view('hotel/hotel')->with(compact('rec'));
     }
-    
+
     public function reserve(Request $rec)
     {
         $ch = curl_init('http://recepshen.ir/api/reserve');
@@ -88,7 +92,7 @@ class hotelsController extends Controller
                     'gender'            => $rec->input("Sir_Madam"),
                 )
             )
-                
+
         )));
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -105,14 +109,14 @@ class hotelsController extends Controller
         $status = request()->input('status');
         $rest = "";
         if (isset($factor) && isset($status)){
-           
+
             $ch = curl_init('http://recepshen.ir/api/reserves/confirmation');
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode(array(
                 'payed' => request()->input('status'),
                 'factorNumber' => request()->input('factorNumber'),
                 'user_token' => "DEsFVekRIkrvfbfiuULvzSdvLL6BwvkzGg0LRJDtySA7a0xsYladMyxJ2gcLv8LNt74ihjAxz9RvXE7bymLm8op47Oqqiur0",
                 'token' => 'mzoc1CEq401565108119FTd7QvbGea',
-                    
+
             )));
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

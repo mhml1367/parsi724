@@ -24,10 +24,10 @@
                 <!-- navbar top Left-->
                 <div class="d-flex align-items-center">
                     <!-- Language -->
-                    <div class="dropdown"><a class="dropdown-toggle" href="http://travelgo.iranneginhotel.ir/#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="dropdown-item-icon" src="./index_files/uk.svg" alt=""> انگلیسی </a>
+                    <div class="dropdown"><a class="dropdown-toggle" href="http://travelgo.iranneginhotel.ir/#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="dropdown-item-icon" src="/index_files/uk.svg" alt=""> انگلیسی </a>
                         <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 22px, 0px);" wfd-invisible="true"><span class="dropdown-item-text">زبان را انتخاب کنید</span>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="http://travelgo.iranneginhotel.ir/#"><img class="dropdown-item-icon" src="./index_files/sp.svg" alt="">اسپانیایی </a> <a class="dropdown-item" href="http://travelgo.iranneginhotel.ir/#"><img class="dropdown-item-icon" src="./index_files/fr.svg" alt="">فرانسه </a> <a class="dropdown-item" href="http://travelgo.iranneginhotel.ir/#"><img class="dropdown-item-icon" src="./index_files/gr.svg" alt="">آلمانی</a>
+                            <a class="dropdown-item" href="http://travelgo.iranneginhotel.ir/#"><img class="dropdown-item-icon" src="/index_files/sp.svg" alt="">اسپانیایی </a> <a class="dropdown-item" href="http://travelgo.iranneginhotel.ir/#"><img class="dropdown-item-icon" src="/index_files/fr.svg" alt="">فرانسه </a> <a class="dropdown-item" href="http://travelgo.iranneginhotel.ir/#"><img class="dropdown-item-icon" src="/index_files/gr.svg" alt="">آلمانی</a>
                         </div>
                     </div>
                     <!-- Top info -->
@@ -69,7 +69,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="http://travelgo.iranneginhotel.ir/index.html"> <img src="./index_files/logo-header.png" alt="مسافرتی"> </a>
+            <a class="navbar-brand" href="http://travelgo.iranneginhotel.ir/index.html"> <img src="/index_files/logo-header.png" alt="مسافرتی"> </a>
             <!-- Menu opener button -->
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="ناوبری را تغییر دهید" wfd-invisible="true"><span class="navbar-toggler-icon"> </span></button>
             <!-- Main Menu Start -->

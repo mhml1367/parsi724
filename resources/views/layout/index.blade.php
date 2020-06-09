@@ -30,7 +30,6 @@
 <script src="/index_files/main.js" type="text/javascript" wfd-invisible="true"></script>
 <script src="/index_files/jquery.fancybox.min.js" type="text/javascript" wfd-invisible="true"></script>
 <script src="/index_files/bootstrap-datepicker.min.js" type="text/javascript" wfd-invisible="true"></script>
-<script src="/index_files/jquery-ui.min.js" type="text/javascript" wfd-invisible="true"></script>
 
 @yield ("javascript")
 
