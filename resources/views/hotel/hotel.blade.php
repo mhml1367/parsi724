@@ -135,13 +135,10 @@
                     </div>
                     <div class="tab-pane booking-search show active" id="tab-de-2">
 
-
-
-
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding8">
                                 <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
-                                    <input class="form-control" type="text" placeholder="انتخاب کنید">
+                                    <input class="form-control" disabled value="{{$rec->type}} {{$rec->name}}" type="text" placeholder="">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
@@ -182,278 +179,23 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding8">
                                 <div class="form-group">
-                                    <button class="btn btn-primary btn-lg btn-grad" type="submit">جستجو کردن</button>
+                                    <button class="btn btn-primary btn-lg btn-grad" id="sub" type="submit">جستجو کردن</button>
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
-
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h5 class="mb-4">هتل های موجود</h5>
+                                <h5 class="mb-4" id="title">هتل های موجود</h5>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="listing-item ">
-                                    <article class="TravelGo-category-listing fl-wrap">
-                                        <div class="row">
-                                            <div class="col-lg-5 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-img TravelGo-category-list-img"> <a
-                                                        href="hotel-detailed.html"><img src="images/hotels/room8.jpg"
-                                                            alt=""></a>
-                                                    <div class="TravelGo-category-opt">
-                                                        <div class="listing-rating card-popup-rainingvis"
-                                                            data-starrating2="5"><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                                                        <div class="rate-class-name">
-                                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
-                                                            <span>5.0</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-content fl-wrap title-sin_item">
-                                                    <div class="TravelGo-category-content-title fl-wrap">
-                                                        <div class="TravelGo-category-content-title-item">
-                                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">هتل
-                                                                    های آسیا و آفریقا</a></h3>
-                                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
-                                                                    class="map-item"><i
-                                                                        class="fas fa-map-marker-alt"></i>بیست و هفتم
-                                                                    بروکلین نیویورک ، </a> <span>200 تومان
-                                                                </span><span></span> </div>
-                                                        </div>
-                                                    </div>
-                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است.</p>
-                                                    <ul class="facilities-list fl-wrap">
-                                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
-                                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
-                                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر
-                                                                سیگاری</span></li>
-                                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
-                                                    </ul>
-                                                    <div class="TravelGo-category-footer fl-wrap">
-                                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3
-                                                                شب</span></div>
-                                                        <div class="TravelGo-opt-list"> <a href="#"
-                                                                class="single-map-item"><i
-                                                                    class="fas fa-map-marker-alt"></i><span
-                                                                    class="TravelGo-opt-tooltip">روی نقشه</span></a> <a
-                                                                href="#" class="TravelGo-js-favorite"><i
-                                                                    class="fas fa-heart"></i><span
-                                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a
-                                                                href="#" class="TravelGo-js-booking"><i
-                                                                    class="fas fa-retweet"></i><span
-                                                                    class="TravelGo-opt-tooltip">مسیرها را پیدا
-                                                                    کنید</span></a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
+                            <div class="lds-ellipsis" id="loading" style="display: none">
+                                <div></div><div></div><div></div><div></div>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="listing-item ">
-                                    <article class="TravelGo-category-listing fl-wrap">
-                                        <div class="row">
-                                            <div class="col-lg-5 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-img TravelGo-category-list-img"> <a
-                                                        href="hotel-detailed.html"><img src="images/hotels/room7.jpg"
-                                                            alt=""></a>
-                                                    <div class="TravelGo-category-opt">
-                                                        <div class="listing-rating card-popup-rainingvis"
-                                                            data-starrating2="5"><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                                                        <div class="rate-class-name">
-                                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
-                                                            <span>5.0</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-content fl-wrap title-sin_item">
-                                                    <div class="TravelGo-category-content-title fl-wrap">
-                                                        <div class="TravelGo-category-content-title-item">
-                                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">هتل
-                                                                    های آسیا و آفریقا</a></h3>
-                                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
-                                                                    class="map-item"><i
-                                                                        class="fas fa-map-marker-alt"></i>بیست و هفتم
-                                                                    بروکلین نیویورک ، </a> <span>200 تومان
-                                                                </span><span></span> </div>
-                                                        </div>
-                                                    </div>
-                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است.</p>
-                                                    <ul class="facilities-list fl-wrap">
-                                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
-                                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
-                                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر
-                                                                سیگاری</span></li>
-                                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
-                                                    </ul>
-                                                    <div class="TravelGo-category-footer fl-wrap">
-                                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3
-                                                                شب</span></div>
-                                                        <div class="TravelGo-opt-list"> <a href="#"
-                                                                class="single-map-item"><i
-                                                                    class="fas fa-map-marker-alt"></i><span
-                                                                    class="TravelGo-opt-tooltip">روی نقشه</span></a> <a
-                                                                href="#" class="TravelGo-js-favorite"><i
-                                                                    class="fas fa-heart"></i><span
-                                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a
-                                                                href="#" class="TravelGo-js-booking"><i
-                                                                    class="fas fa-retweet"></i><span
-                                                                    class="TravelGo-opt-tooltip">مسیرها را پیدا
-                                                                    کنید</span></a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="listing-item ">
-                                    <article class="TravelGo-category-listing fl-wrap">
-                                        <div class="row">
-                                            <div class="col-lg-5 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-img TravelGo-category-list-img"> <a
-                                                        href="hotel-detailed.html"><img src="images/hotels/room6.jpg"
-                                                            alt=""></a>
-                                                    <div class="TravelGo-category-opt">
-                                                        <div class="listing-rating card-popup-rainingvis"
-                                                            data-starrating2="5"><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                                                        <div class="rate-class-name">
-                                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
-                                                            <span>5.0</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-content fl-wrap title-sin_item">
-                                                    <div class="TravelGo-category-content-title fl-wrap">
-                                                        <div class="TravelGo-category-content-title-item">
-                                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">هتل
-                                                                    های آسیا و آفریقا</a></h3>
-                                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
-                                                                    class="map-item"><i
-                                                                        class="fas fa-map-marker-alt"></i>بیست و هفتم
-                                                                    بروکلین نیویورک ، </a> <span>200 تومان
-                                                                </span><span></span> </div>
-                                                        </div>
-                                                    </div>
-                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است.</p>
-                                                    <ul class="facilities-list fl-wrap">
-                                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
-                                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
-                                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر
-                                                                سیگاری</span></li>
-                                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
-                                                    </ul>
-                                                    <div class="TravelGo-category-footer fl-wrap">
-                                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3
-                                                                شب</span></div>
-                                                        <div class="TravelGo-opt-list"> <a href="#"
-                                                                class="single-map-item"><i
-                                                                    class="fas fa-map-marker-alt"></i><span
-                                                                    class="TravelGo-opt-tooltip">روی نقشه</span></a> <a
-                                                                href="#" class="TravelGo-js-favorite"><i
-                                                                    class="fas fa-heart"></i><span
-                                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a
-                                                                href="#" class="TravelGo-js-booking"><i
-                                                                    class="fas fa-retweet"></i><span
-                                                                    class="TravelGo-opt-tooltip">مسیرها را پیدا
-                                                                    کنید</span></a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="listing-item ">
-                                    <article class="TravelGo-category-listing fl-wrap">
-                                        <div class="row">
-                                            <div class="col-lg-5 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-img TravelGo-category-list-img"> <a
-                                                        href="hotel-detailed.html"><img src="images/hotels/room4.jpg"
-                                                            alt=""></a>
-                                                    <div class="TravelGo-category-opt">
-                                                        <div class="listing-rating card-popup-rainingvis"
-                                                            data-starrating2="5"><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                                class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                                                        <div class="rate-class-name">
-                                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
-                                                            <span>5.0</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7 col-md-6 col-sm-12">
-                                                <div class="TravelGo-category-content fl-wrap title-sin_item">
-                                                    <div class="TravelGo-category-content-title fl-wrap">
-                                                        <div class="TravelGo-category-content-title-item">
-                                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">هتل
-                                                                    های آسیا و آفریقا</a></h3>
-                                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
-                                                                    class="map-item"><i
-                                                                        class="fas fa-map-marker-alt"></i>بیست و هفتم
-                                                                    بروکلین نیویورک ، </a> <span>200 تومان
-                                                                </span><span></span> </div>
-                                                        </div>
-                                                    </div>
-                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                        استفاده از طراحان گرافیک است.</p>
-                                                    <ul class="facilities-list fl-wrap">
-                                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
-                                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
-                                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر
-                                                                سیگاری</span></li>
-                                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
-                                                    </ul>
-                                                    <div class="TravelGo-category-footer fl-wrap">
-                                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3
-                                                                شب</span></div>
-                                                        <div class="TravelGo-opt-list"> <a href="#"
-                                                                class="single-map-item"><i
-                                                                    class="fas fa-map-marker-alt"></i><span
-                                                                    class="TravelGo-opt-tooltip">روی نقشه</span></a> <a
-                                                                href="#" class="TravelGo-js-favorite"><i
-                                                                    class="fas fa-heart"></i><span
-                                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a
-                                                                href="#" class="TravelGo-js-booking"><i
-                                                                    class="fas fa-retweet"></i><span
-                                                                    class="TravelGo-opt-tooltip">مسیرها را پیدا
-                                                                    کنید</span></a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
+                            <div id="HOTELS">
+
                             </div>
                         </div>
+
                     </div>
                     <div class="tab-pane" id="tab-de-3">
                         <div class="text-block NopaddingDetails">
@@ -699,25 +441,134 @@
 <script src="/js/persian-datepicker.js"></script>
 
 <script>
-    $('#date-picker').persianDatepicker({
-        initialValue: true,
-        initialValueType: 'en',
-        format: "YYYY/MM/DD",
-        autoClose: true
-    });
-    $('#date-picker-out').persianDatepicker({
-        initialValue: true,
-        initialValueType: 'en',
-        format: "YYYY/MM/DD",
-        autoClose: true
+$('#date-picker').persianDatepicker({
+    initialValue: true,
+    initialValueType: 'en',
+    format: "YYYY/MM/DD",
+    autoClose: true
+});
+$('#date-picker-out').persianDatepicker({
+    initialValue: true,
+    initialValueType: 'en',
+    format: "YYYY/MM/DD",
+    autoClose: true
+});
+
+function parseArabic(str) {
+    return Number( str.replace(/[٠١٢٣٤٥٦٧٨٩]/g, function(d) {
+        return d.charCodeAt(0) - 1632; // Convert Arabic numbers
+    }).replace(/[۰۱۲۳۴۵۶۷۸۹]/g, function(d) {
+        return d.charCodeAt(0) - 1776; // Convert Persian numbers
+    }) );
+}
+
+  $("#sub").click(function () {
+    document.getElementById("HOTELS").innerHTML = "";
+    document.getElementById('loading').style.display = "initial";
+
+    var DateF = $("#date-picker").val();
+    var DateS = DateF.split("/");
+    var DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
+
+    var DateFi = $("#date-picker-out").val();
+    var DateSi = DateFi.split("/");
+    var DateFroi = parseArabic(DateSi[0])+"/"+parseArabic(DateSi[1])+"/"+parseArabic(DateSi[2]);
+
+    var DateFrom = moment(DateFro).format('YYYY/MM/DD');
+    var DateEnd = moment(DateFroi).format('YYYY/MM/DD');
+
+        dataSend = {
+            token: "mzoc1CEq401565108119FTd7QvbGea",
+            from : DateFrom,
+            to : DateEnd,
+            hotel_id: "{{$rec->id}}",
+        };
+        DataHotel(dataSend);
     });
 
-    function parseArabic(str) {
-        return Number(str.replace(/[٠١٢٣٤٥٦٧٨٩]/g, function (d) {
-            return d.charCodeAt(0) - 1632; // Convert Arabic numbers
-        }).replace(/[۰۱۲۳۴۵۶۷۸۹]/g, function (d) {
-            return d.charCodeAt(0) - 1776; // Convert Persian numbers
-        }));
+function DataHotel(dataSend) {
+    $('html,body').animate({ scrollTop: 500 }, 'slow');
+    var DateF = $("#date-picker").val();
+    var DateS = DateF.split("/");
+    var DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
+
+    var DateFrom = moment(DateFro).format('YYYY/MM/DD');
+    var DateEnd = moment(DateFro).add($("#date1").val(),'d').format('YYYY/MM/DD');
+    $.ajax({
+        type: 'GET',
+        url: 'http://recepshen.ir/api/fetchRooms',
+        data: dataSend,
+        success: function (D) {
+            if(D["error"] == undefined){
+                if(D["data"]["rooms"].length != 0){
+
+                document.getElementById("title").innerHTML ="<h2>اتاق های موجود</h2>";
+                document.getElementById('loading').style.display = "none";
+
+            var FIELD= "";
+            for (i = 0; i < D["data"]["rooms"].length; i++)
+            {
+                if (D["data"]["rooms"][i]["images"].length == 0) {
+                    image = "http://recepshen.com/image/imageNotFound.jpg";
+                }else{
+                    image = D["data"]["rooms"][i]["images"]["0"];
+                }
+                    FIELD += "<article class=\"TravelGo-category-listing fl-wrap\">";
+                    FIELD += "<div class=\"row\">";
+                    FIELD += "<div class=\"col-lg-5 col-md-6 col-sm-12\">";
+                    FIELD += "<div class=\"TravelGo-category-img TravelGo-category-list-img\"> <a href=\"hotel-detailed.html\"><img src=\""+image+"\" alt=\"\"></a>";
+                    FIELD += "<div class=\"TravelGo-category-opt\">";
+                    FIELD += "<div class=\"listing-rating card-popup-rainingvis\" data-starrating2=\"5\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></div>";
+                    FIELD += "<div class=\"rate-class-name\">";
+                    FIELD += "<div class=\"score\"><strong>بسیار خوب</strong> 27 بررسی</div>";
+                    FIELD += "<span>5.0</span>";
+                    FIELD += "</div>";
+                    FIELD += "</div>";
+                    FIELD += "</div>";
+                    FIELD += "</div>";
+                    FIELD += "<div class=\"col-lg-7 col-md-6 col-sm-12\">";
+                    FIELD += "<div class=\"TravelGo-category-content fl-wrap title-sin_item\">";
+                    FIELD += "<div class=\"TravelGo-category-content-title fl-wrap\">";
+                    FIELD += "<div class=\"TravelGo-category-content-title-item\">";
+                    FIELD += "<h3 class=\"title-sin_map\"><a href=\"hotel-detailed.html\">"+D["data"]["rooms"][i]["name"]+"</a></h3>";
+                    FIELD += "<div class=\"TravelGo-category-location fl-wrap\"><i class=\"fa fa-check-square-o\"></i>"+D["data"]["rooms"][i]["contracts"]["0"]["name"]+"<span>"+D["data"]["rooms"][i]["contracts"]["0"]["price"]+"</span><span></span> </div>";
+                    FIELD += "</div>";
+                    FIELD += "</div>";
+                    FIELD += "<ul class=\"facilities-list fl-wrap\">";
+                    for (let index = 0; index < D["data"]["rooms"][i]["specifications"].length; index++) {
+
+                    FIELD += "<li><img style=\" width: 30px;  height: 30px;\" src=\""+D["data"]["rooms"][i]["specifications"][index]["icon"]+"\" alt=\"\"><span>"+D["data"]["rooms"][i]["specifications"][index]["name"]+"</span></li>";
+
+                    }
+
+                    FIELD += "</ul>";
+                    FIELD += "<div class=\"TravelGo-category-footer fl-wrap\">";
+                    FIELD += "<a href=\"#\" class=\"TravelGo-category-price btn-grad\">انتخاب اتاق</a>";
+                    FIELD += "<div class=\"TravelGo-opt-list\"> <a href=\"#\" class=\"single-map-item\"><i class=\"fas fa-map-marker-alt\"></i><span class=\"TravelGo-opt-tooltip\">روی نقشه</span></a> <a href=\"#\" class=\"TravelGo-js-favorite\"><i class=\"fas fa-heart\"></i><span class=\"TravelGo-opt-tooltip\">صرفه جویی</span></a> <a href=\"#\" class=\"TravelGo-js-booking\"><i class=\"fas fa-retweet\"></i><span class=\"TravelGo-opt-tooltip\">مسیرها را پیدا                                                    کنید</span></a> </div>";
+                    FIELD += "</div>";
+                    FIELD += "</div>";
+                    FIELD += "</div>";
+                    FIELD += "</div>";
+                    FIELD += "</article>";
+            }
+                document.getElementById("HOTELS").innerHTML = FIELD;
+                }else{
+                    document.getElementById("title").innerHTML ="<h2>در این تاریخ اتاقی موجود نیست</h2>";
+                    document.getElementById('loading').style.display = "none";
+                }
+            }else{
+                document.getElementById("title").innerHTML ="<h2>"+ D["error"]+"</h2>";
+                document.getElementById('loading').style.display = "none";
+            }
+
+        },
+        error: function (e) {
+            document.getElementById("title").innerHTML ="<h2>خطایی رخ داده لطفا دوباره تلاش نمایید</h2>";
+            document.getElementById('loading').style.display = "none";
+        }
+
+    });
+
     }
 </script>
 @endsection
