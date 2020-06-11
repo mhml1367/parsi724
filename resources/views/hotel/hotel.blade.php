@@ -389,15 +389,12 @@
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 right_Details">
                 <div class="p-4 shadow ml-lg-4 rounded sticky-top" style="top: 100px;">
-                    <p class="text-muted"><span class="text-primary h2">80 تومان</span> در هر شب</p>
+                    <div id="titleRooms"></div>
                     <hr class="my-4">
                     <form id="booking-form" method="get" action="#" autocomplete="off" class="form">
                         <div class="form-group">
                             <label for="bookingDate" class="form-label">اقامت شما *</label>
-                            <div class="datepicker-container datepicker-container-right">
-                                <input type="text" name="bookingDate" id="bookingDate" placeholder="انتخاب تاریخ"
-                                    required="" class="form-control">
-                            </div>
+
                         </div>
                         <div class="form-group mb-4">
                             <label for="guests" class="form-label">مهمان *</label>
@@ -485,7 +482,7 @@ function parseArabic(str) {
         };
         DataHotel(dataSend);
     });
-
+    var rooms = [];
 function DataHotel(dataSend) {
     $('html,body').animate({ scrollTop: 500 }, 'slow');
     var DateF = $("#date-picker").val();
@@ -506,6 +503,7 @@ function DataHotel(dataSend) {
                 document.getElementById('loading').style.display = "none";
 
             var FIELD= "";
+            rooms = D["data"]["rooms"];
             for (i = 0; i < D["data"]["rooms"].length; i++)
             {
                 if (D["data"]["rooms"][i]["images"].length == 0) {
@@ -535,15 +533,14 @@ function DataHotel(dataSend) {
                     FIELD += "</div>";
                     FIELD += "</div>";
                     FIELD += "<ul class=\"facilities-list fl-wrap\">";
+
                     for (let index = 0; index < D["data"]["rooms"][i]["specifications"].length; index++) {
-
-                    FIELD += "<li><img style=\" width: 30px;  height: 30px;\" src=\""+D["data"]["rooms"][i]["specifications"][index]["icon"]+"\" alt=\"\"><span>"+D["data"]["rooms"][i]["specifications"][index]["name"]+"</span></li>";
-
+                        FIELD += "<li><img style=\" width: 30px;  height: 30px;\" src=\""+D["data"]["rooms"][i]["specifications"][index]["icon"]+"\" alt=\"\"><span>"+D["data"]["rooms"][i]["specifications"][index]["name"]+"</span></li>";
                     }
 
                     FIELD += "</ul>";
                     FIELD += "<div class=\"TravelGo-category-footer fl-wrap\">";
-                    FIELD += "<a href=\"#\" class=\"TravelGo-category-price btn-grad\">انتخاب اتاق</a>";
+                    FIELD += "<a onclick=\"selectRoom("+i+")\" class=\"TravelGo-category-price btn-grad\">انتخاب اتاق</a>";
                     FIELD += "<div class=\"TravelGo-opt-list\"> <a href=\"#\" class=\"single-map-item\"><i class=\"fas fa-map-marker-alt\"></i><span class=\"TravelGo-opt-tooltip\">روی نقشه</span></a> <a href=\"#\" class=\"TravelGo-js-favorite\"><i class=\"fas fa-heart\"></i><span class=\"TravelGo-opt-tooltip\">صرفه جویی</span></a> <a href=\"#\" class=\"TravelGo-js-booking\"><i class=\"fas fa-retweet\"></i><span class=\"TravelGo-opt-tooltip\">مسیرها را پیدا                                                    کنید</span></a> </div>";
                     FIELD += "</div>";
                     FIELD += "</div>";
@@ -568,6 +565,16 @@ function DataHotel(dataSend) {
         }
 
     });
+
+    }
+
+
+    function selectRoom(id) {
+        titleRoom += "<img href=\""+rooms[id]["images"][0]+"\" style=\"width: 100%;height: auto;\">";
+        titleRoom += "<p class=\"text-muted\"><span class=\"text-primary h2\""+rooms[id]["name"]+"</span> در هر شب</p>";
+
+
+        document.getElementById("titleRooms").innerHTML = titleRoom;
 
     }
 </script>
