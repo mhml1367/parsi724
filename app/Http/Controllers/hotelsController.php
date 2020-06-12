@@ -103,6 +103,15 @@ class hotelsController extends Controller
         // dd($response);
         return response()->json($response);
     }
+
+
+
+    public function booking(Request $rec)
+    {
+        return view('hotel/booking')->with(compact('rec'));
+    }
+
+
     public function confirmation()
     {
         $factor = request()->input('factorNumber');

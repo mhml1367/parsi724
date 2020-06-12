@@ -388,41 +388,62 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 right_Details">
-                <div class="p-4 shadow ml-lg-4 rounded sticky-top" style="top: 100px;">
-                    <div id="titleRooms"></div>
+                <div class="p-4 shadow ml-lg-4 rounded sticky-top" style="top: 15px;">
+                    <form action="{{ route('post.hotels.booking') }}" method="POST">
+                        @csrf
+                    <div id="titleRooms">اتاق انتخاب کنید</div>
+                    <div class="row" id="contracts"></div>
                     <hr class="my-4">
-                    <form id="booking-form" method="get" action="#" autocomplete="off" class="form">
-                        <div class="form-group">
-                            <label for="bookingDate" class="form-label">اقامت شما *</label>
-
+                        <div class="row">
+                            <div class="col">
+                            <div class="form-group">
+                                <label for="bookingDate" name="first_name" class="form-label">نام</label>
+                                <input type="text"  class="form-control">
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="form-group">
+                                <label for="bookingDate" name="last_name" class="form-label">نام خانوادگی</label>
+                                <input type="text" class="form-control" >
+                            </div>
                         </div>
-                        <div class="form-group mb-4">
-                            <label for="guests" class="form-label">مهمان *</label>
-                            <select name="guests" id="guests" class="form-control">
-                                <option value="1">1 مهمان</option>
-                                <option value="2">2 مهمان</option>
-                                <option value="3">3 مهمان</option>
-                                <option value="4">4 مهمان</option>
-                                <option value="5">5 مهمان</option>
-                            </select>
-                        </div>
-                        <div class="form-group mb-4">
-                            <label for="guests" class="form-label">کودک *</label>
-                            <select name="guests" id="guests" class="form-control">
-                                <option value="1">1 کودک</option>
-                                <option value="2">2 کودک</option>
-                                <option value="3">3 کودک</option>
-                            </select>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">رزرو را تأیید کنید</button>
+                            <label for="bookingDate" name="national_code" class="form-label">کد ملی</label>
+                            <input type="text" class="form-control" >
                         </div>
-                    </form>
+                        <div class="form-group">
+                            <label for="bookingDate" class="form-label">موبایل</label>
+                            <input type="text" name="phone_number" class="form-control" >
+                        </div>
+                        <div class="row">
+                                <div class="col">
+                                <div class="form-group">
+                                    <label for="bookingDate" class="form-label">شهر مبدا</label>
+                                    <input type="text" name="city" class="form-control">
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="form-group">
+                                    <label for="bookingDate" class="form-label">آقا/خانم</label>
+                                    <select name="Sir_Madam" class="form-control">
+                                        <option value="M">اقا</option>
+                                        <option value="F">خانم</option>
+                                    </select>
+                                
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">رزرو و تایید</button>
+                        </div>
                     <hr class="my-4">
                     <div class="text-center">
                         <p> <a href="#" class="text-secondary text-sm"> <i class="fa fa-heart"></i> این هتل ها را علامت
                                 گذاری کنید</a></p>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -570,12 +591,90 @@ function DataHotel(dataSend) {
 
 
     function selectRoom(id) {
-        titleRoom += "<img href=\""+rooms[id]["images"][0]+"\" style=\"width: 100%;height: auto;\">";
-        titleRoom += "<p class=\"text-muted\"><span class=\"text-primary h2\""+rooms[id]["name"]+"</span> در هر شب</p>";
+        titleRoom = "";
+        contracts = "";
 
+        titleRoom += "<img src=\""+rooms[id]["images"][0]+"\" style=\"width: 100%;height: auto;\">";
+        titleRoom += "<p class=\"text-muted\">اتاق <span class=\"text-primary\">"+rooms[id]["name"]+"</span> </p>";
+        titleRoom += "<hr>";
+        titleRoom += "<label>انتخاب نوع اقامت:</label>";
+
+            for (az = 0; az < rooms[id].contracts.length; az++) {
+
+            var breakfast="";
+            var lunch="";
+            var dinner="";
+            var stay="";
+            
+            if (rooms[id].contracts[az].stay = 1) {
+                 stay = "اقامت";
+            }
+            if (rooms[id].contracts[az].breakfast == 1) {
+                 breakfast = "صبحانه";
+            }
+            if (rooms[id].contracts[az].lunch == 1) {
+                lunch = "نهار";
+            }
+            if (rooms[id].contracts[az].dinner == 1) {
+                dinner = "شام";
+            }
+            
+            contracts += "<div class=\"col\">";
+            contracts += "<div class=\"form-group\">";
+            contracts += "<input type=\"radio\" name=\"gender\" value=\""+rooms[id].contracts[az].id+"\"> "+ stay +" "+ breakfast +" "+ lunch +" "+ dinner +"<br>";
+            if (rooms[id].contracts[az].discount_price == null) {
+                contracts += (rooms[id].contracts[az].price + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+            }else{
+                contracts += (rooms[id].contracts[az].discount_price + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+                contracts += "<strike>"+(rooms[id].contracts[az].price + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")+"</strike>";
+            }
+            contracts += " ريال </input>";
+            contracts += "</div>";
+            contracts += "</div>";
+        }
 
         document.getElementById("titleRooms").innerHTML = titleRoom;
+        document.getElementById("contracts").innerHTML = contracts;
 
     }
+
+
+//     $("#send").click(function () {
+//         jQuery.ajaxSetup({
+//             headers: {
+//                 'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+//             }
+//         });
+//     $.ajax({
+//         type: 'POST',
+//         url: "{{ route('post.hotels.reserve') }}",
+//         data: {
+//             hotel_id: "{{$rec->id}}",
+//             room_id: idRoom,
+//             contracts: $('input[name="gender"]:checked').val(),
+//             first_name: $("#first_name").val(),
+//             last_name: $("#last_name").val(),
+//             national_code: $("#national_code").val(),
+//             phone_number: $("#phone_number").val(),
+//             Sir_Madam: $("#Sir_Madam").val(),
+//             city: $("#city").val(),
+//             Foreign: $("#Foreign").val(),
+//             start_date: "{{$rec->start_date}}",
+//             end_date: "{{$rec->end_date}}",
+//         },
+//         success: function (Data) {
+//             if (Data["status"] == 0) {
+//                 $("#send").notify(
+//                     Data["error"], "error",
+//                     { position:"right" }
+//                 );
+//             }
+//             if (Data["status"] == 1) {
+//                 window.location.replace(Data["data"]["payLink"]);
+//             }
+//         }
+//     });
+// });
+
 </script>
 @endsection
