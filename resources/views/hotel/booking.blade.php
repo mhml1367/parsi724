@@ -17,7 +17,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="bookex">نام و نام خانوادگی:</td>
-                                    <td>{{$rec->first_name}}  {{$rec->last_name}}</td>
+                                        <td>{{$rec->first_name}}  {{$rec->last_name}}</td>
                                     </tr>
                                     <tr>
                                         <td class="bookex">کدملی:</td>
@@ -27,27 +27,35 @@
                                         <td class="bookex">شماره موبایل:</td>
                                         <td>{{$rec->mobile}}</td>
                                     </tr>
-
-
-
                                     <tr>
-                                        <td class="bookex">شهر / شهر:</td>
-                                        <td>بمبئی</td>
+                                        <td class="bookex">شهر:</td>
+                                        <td>{{$rec->city}}</td>
                                     </tr>
-
                                     <tr>
-                                        <td class="bookex">کد پستی:</td>
-                                        <td>28454</td>
+                                        <td class="bookex">آقا/خانم:</td>
+                                        <td>@if ($rec->city == "m")
+                                            خانم
+                                        @endif @if ($rec->city == "f")
+                                        آقا
+                                    @endif</td>
                                     </tr>
-
                                     <tr>
-                                        <td class="bookex">کشور:</td>
-                                        <td>تایلند</td>
+                                        <td class="bookex">اتاق:</td>
+                                        <td>{{$rec->city}}
+                                        مبلغ: 
+                                        </td>
                                     </tr>
-
                                     <tr>
-                                        <td class="bookex">نوع پرداخت:</td>
-                                        <td>پی پال</td>
+                                        <td class="bookex">اقامت:</td>
+                                        <td>{{$rec->city}}
+                                        مبلغ: 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bookex">جمع مبلغ پرداختی</td>
+                                        <td>
+                                        مبلغ: 
+                                        </td>
                                     </tr>
 
 
@@ -57,12 +65,14 @@
 
 
                             <div class="login-top cardInfo">
-                                <h3>پرداخت</h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است.
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک است.
+                                <h3>تایید مشخصات و رزرو اتاق</h3>
+                                <p>لطفا مشخصات خود و اتاق رزرو را حتما چک کنید
+                                    <br>
+
                                 </p>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-lg btn-grad" id="sub" type="submit">تایید رزرو و پرداخت</button>
+                                </div>
                             </div>
 
 

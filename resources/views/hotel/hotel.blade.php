@@ -397,20 +397,20 @@
                         <div class="row">
                             <div class="col">
                             <div class="form-group">
-                                <label for="bookingDate" name="first_name" class="form-label">نام</label>
-                                <input type="text"  class="form-control">
+                                <label for="bookingDate" class="form-label">نام</label>
+                                <input type="text" name="first_name" class="form-control">
                             </div>
                             </div>
                             <div class="col">
                             <div class="form-group">
-                                <label for="bookingDate" name="last_name" class="form-label">نام خانوادگی</label>
-                                <input type="text" class="form-control" >
+                                <label for="bookingDate" class="form-label">نام خانوادگی</label>
+                                <input type="text" name="last_name" class="form-control" >
                             </div>
                         </div>
                         </div>
                         <div class="form-group">
-                            <label for="bookingDate" name="national_code" class="form-label">کد ملی</label>
-                            <input type="text" class="form-control" >
+                            <label for="bookingDate" class="form-label">کد ملی</label>
+                            <input type="text" name="national_code" class="form-control" >
                         </div>
                         <div class="form-group">
                             <label for="bookingDate" class="form-label">موبایل</label>
