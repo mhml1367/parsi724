@@ -417,24 +417,29 @@
                             <input type="text" name="phone_number" class="form-control" >
                         </div>
                         <div class="row">
-                                <div class="col">
+                            <div class="col">
                                 <div class="form-group">
                                     <label for="bookingDate" class="form-label">شهر مبدا</label>
                                     <input type="text" name="city" class="form-control">
                                 </div>
-                                </div>
-                                <div class="col">
+                            </div>
+                            <div class="col">
                                 <div class="form-group">
                                     <label for="bookingDate" class="form-label">آقا/خانم</label>
                                     <select name="Sir_Madam" class="form-control">
                                         <option value="M">اقا</option>
                                         <option value="F">خانم</option>
                                     </select>
-                                
                                 </div>
                             </div>
                         </div>
-                   
+                        <input type="hidden" id="date1" name="date1">
+                        <input type="hidden" id="date2" name="date2">
+                        <input type="hidden" id="roomid" name="roomid">
+                        <input type="hidden" id="hotelid" name="hotelid">
+                        <input type="hidden" id="contract" name="contract">
+                        <input type="hidden" id="price" name="price">
+                        <input type="hidden" id="room" name="room">
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block">رزرو و تایید</button>
                         </div>
@@ -479,21 +484,23 @@ function parseArabic(str) {
         return d.charCodeAt(0) - 1776; // Convert Persian numbers
     }) );
 }
+var DateFrom = "";
+var DateEnd = "";
 
   $("#sub").click(function () {
     document.getElementById("HOTELS").innerHTML = "";
     document.getElementById('loading').style.display = "initial";
 
-    var DateF = $("#date-picker").val();
-    var DateS = DateF.split("/");
-    var DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
+     DateF = $("#date-picker").val();
+     DateS = DateF.split("/");
+     DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
 
-    var DateFi = $("#date-picker-out").val();
-    var DateSi = DateFi.split("/");
-    var DateFroi = parseArabic(DateSi[0])+"/"+parseArabic(DateSi[1])+"/"+parseArabic(DateSi[2]);
+     DateFi = $("#date-picker-out").val();
+     DateSi = DateFi.split("/");
+     DateFroi = parseArabic(DateSi[0])+"/"+parseArabic(DateSi[1])+"/"+parseArabic(DateSi[2]);
 
-    var DateFrom = moment(DateFro).format('YYYY/MM/DD');
-    var DateEnd = moment(DateFroi).format('YYYY/MM/DD');
+     DateFrom = moment(DateFro).format('YYYY/MM/DD');
+     DateEnd = moment(DateFroi).format('YYYY/MM/DD');
 
         dataSend = {
             token: "mzoc1CEq401565108119FTd7QvbGea",
@@ -503,15 +510,11 @@ function parseArabic(str) {
         };
         DataHotel(dataSend);
     });
+
     var rooms = [];
+    var hotelid = "";
 function DataHotel(dataSend) {
     $('html,body').animate({ scrollTop: 500 }, 'slow');
-    var DateF = $("#date-picker").val();
-    var DateS = DateF.split("/");
-    var DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
-
-    var DateFrom = moment(DateFro).format('YYYY/MM/DD');
-    var DateEnd = moment(DateFro).add($("#date1").val(),'d').format('YYYY/MM/DD');
     $.ajax({
         type: 'GET',
         url: 'http://recepshen.ir/api/fetchRooms',
@@ -523,7 +526,8 @@ function DataHotel(dataSend) {
                 document.getElementById("title").innerHTML ="<h2>اتاق های موجود</h2>";
                 document.getElementById('loading').style.display = "none";
 
-            var FIELD= "";
+            FIELD= "";
+            hotelid= D["data"]["id"];
             rooms = D["data"]["rooms"];
             for (i = 0; i < D["data"]["rooms"].length; i++)
             {
@@ -605,7 +609,7 @@ function DataHotel(dataSend) {
             var lunch="";
             var dinner="";
             var stay="";
-            
+
             if (rooms[id].contracts[az].stay = 1) {
                  stay = "اقامت";
             }
@@ -618,63 +622,34 @@ function DataHotel(dataSend) {
             if (rooms[id].contracts[az].dinner == 1) {
                 dinner = "شام";
             }
-            
+
             contracts += "<div class=\"col\">";
             contracts += "<div class=\"form-group\">";
             contracts += "<input type=\"radio\" name=\"gender\" value=\""+rooms[id].contracts[az].id+"\"> "+ stay +" "+ breakfast +" "+ lunch +" "+ dinner +"<br>";
             if (rooms[id].contracts[az].discount_price == null) {
                 contracts += (rooms[id].contracts[az].price + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+                price = rooms[id].contracts[az].price;
             }else{
                 contracts += (rooms[id].contracts[az].discount_price + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
                 contracts += "<strike>"+(rooms[id].contracts[az].price + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")+"</strike>";
+                price = rooms[id].contracts[az].price;
             }
             contracts += " ريال </input>";
             contracts += "</div>";
             contracts += "</div>";
         }
+        document.getElementById("date1").value = DateFrom;
+        document.getElementById("date2").value = DateEnd;
+        document.getElementById("roomid").value = rooms[id].id;
+        document.getElementById("hotelid").value = hotelid;
+        document.getElementById("price").value = price;
+        document.getElementById("contract").value = stay +" "+ breakfast +" "+ lunch +" "+ dinner;
+        document.getElementById("room").value = rooms[id]["name"];
 
         document.getElementById("titleRooms").innerHTML = titleRoom;
         document.getElementById("contracts").innerHTML = contracts;
 
     }
-
-
-//     $("#send").click(function () {
-//         jQuery.ajaxSetup({
-//             headers: {
-//                 'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
-//             }
-//         });
-//     $.ajax({
-//         type: 'POST',
-//         url: "{{ route('post.hotels.reserve') }}",
-//         data: {
-//             hotel_id: "{{$rec->id}}",
-//             room_id: idRoom,
-//             contracts: $('input[name="gender"]:checked').val(),
-//             first_name: $("#first_name").val(),
-//             last_name: $("#last_name").val(),
-//             national_code: $("#national_code").val(),
-//             phone_number: $("#phone_number").val(),
-//             Sir_Madam: $("#Sir_Madam").val(),
-//             city: $("#city").val(),
-//             Foreign: $("#Foreign").val(),
-//             start_date: "{{$rec->start_date}}",
-//             end_date: "{{$rec->end_date}}",
-//         },
-//         success: function (Data) {
-//             if (Data["status"] == 0) {
-//                 $("#send").notify(
-//                     Data["error"], "error",
-//                     { position:"right" }
-//                 );
-//             }
-//             if (Data["status"] == 1) {
-//                 window.location.replace(Data["data"]["payLink"]);
-//             }
-//         }
-//     });
-// });
 
 </script>
 @endsection

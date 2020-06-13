@@ -25,7 +25,7 @@
                                     </tr>
                                     <tr>
                                         <td class="bookex">شماره موبایل:</td>
-                                        <td>{{$rec->mobile}}</td>
+                                        <td>{{$rec->phone_number}}</td>
                                     </tr>
                                     <tr>
                                         <td class="bookex">شهر:</td>
@@ -33,28 +33,26 @@
                                     </tr>
                                     <tr>
                                         <td class="bookex">آقا/خانم:</td>
-                                        <td>@if ($rec->city == "m")
+                                        <td>@if ($rec->Sir_Madam == "M")
                                             خانم
-                                        @endif @if ($rec->city == "f")
+                                        @endif @if ($rec->Sir_Madam == "F")
                                         آقا
                                     @endif</td>
                                     </tr>
                                     <tr>
                                         <td class="bookex">اتاق:</td>
-                                        <td>{{$rec->city}}
-                                        مبلغ: 
+                                        <td>{{$rec->room}}
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="bookex">اقامت:</td>
-                                        <td>{{$rec->city}}
-                                        مبلغ: 
+                                        <td>{{$rec->contract}}
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="bookex">جمع مبلغ پرداختی</td>
                                         <td>
-                                        مبلغ: 
+                                        مبلغ: {{$rec->price}}
                                         </td>
                                     </tr>
 
@@ -71,7 +69,7 @@
 
                                 </p>
                                 <div class="form-group">
-                                    <button class="btn btn-primary btn-lg btn-grad" id="sub" type="submit">تایید رزرو و پرداخت</button>
+                                    <button class="btn btn-primary btn-lg btn-grad" id="send" type="submit">تایید رزرو و پرداخت</button>
                                 </div>
                             </div>
 
@@ -187,8 +185,41 @@
 @endsection
 
 @section('javascript')
-<script src="/js/jalali-moment.browser.js"></script>
-<script src="/js/persian-date.js"></script>
-<script src="/js/persian-datepicker.js"></script>
-
+<script>
+    $("#send").click(function () {
+            jQuery.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                }
+            });
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('post.hotels.reserve') }}",
+            data: {
+                hotel_id: "{{$rec->hotelid}}",
+                room_id: "{{$rec->roomid}}",
+                contracts: "{{$rec->gender}}",
+                first_name: "{{$rec->first_name}}",
+                last_name: "{{$rec->last_name}}",
+                national_code: "{{$rec->national_code}}",
+                phone_number:"{{$rec->phone_number}}",
+                Sir_Madam: "{{$rec->Sir_Madam}}",
+                city: "{{$rec->city}}",
+                start_date: "{{$rec->date1}}",
+                end_date: "{{$rec->date2}}",
+            },
+            success: function (Data) {
+                if (Data["status"] == 0) {
+                    $("#send").notify(
+                        Data["error"], "error",
+                        { position:"right" }
+                    );
+                }
+                if (Data["status"] == 1) {
+                    window.location.replace(Data["data"]["payLink"]);
+                }
+            }
+        });
+    });
+</script>
 @endsection
