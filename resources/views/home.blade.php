@@ -1,4 +1,7 @@
 @extends('layout.index')
+@section('style')
+<link href="/css/persian-datepicker.css" rel="stylesheet">
+@endsection
 
 @section('content')
 
@@ -6,15 +9,12 @@
     <div class="container h-100">
         <div class="row justify-content-between align-items-center h-100">
             <div class="col-md-8 mb-7">
-                <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h4>
-                <h1 class="display-4 font-weight-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h1>
+                <h4>به آسودگی مسافرت کنید</h4>
+                <h1 class="display-4 font-weight-bold">آژانس پارسی</h1>
             </div>
         </div>
     </div>
 </section>
-<!-- =======================
-	Main banner -->
-
 
     <section class="mt-lg-n9 mt-sm-0 pb-0 z-index-9 booking-search">
         <div class="container ">
@@ -36,8 +36,11 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group"><span class="fas fa-map-marker-alt"></span>
-                                            <input class="form-control" type="text" placeholder="انتخاب کنید">
-                                        </div>
+                                            <select class="custom-select select-big mb-3" id="city" name="option">
+                                                @foreach ($city as $item)
+                                                <option value="{{$item->id}}">{{$item->name}}</option>
+                                                @endforeach
+                                            </select>                                        </div>
                                     </div>
                                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group"><span class="far fa-calendar-alt"></span>
@@ -75,7 +78,7 @@
                                     </div>
                                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group">
-                                            <button class="btn btn-primary btn-lg btn-grad" type="submit">جستجو کردن
+                                            <button class="btn btn-primary btn-lg btn-grad" id="send">جستجو کردن
                                             </button>
                                         </div>
                                     </div>
@@ -1090,4 +1093,34 @@
             </div>
         </div>
     </section>
+@endsection
+
+@section('javascript')
+<script src="/js/jalali-moment.browser.js"></script>
+<script src="/js/persian-date.js"></script>
+<script src="/js/persian-datepicker.js"></script>
+
+<script>
+$('#date-picker').persianDatepicker({
+    initialValue: true,
+    initialValueType: 'en',
+    format: "YYYY/MM/DD",
+    autoClose: true
+});
+$('#date-picker-out').persianDatepicker({
+    initialValue: true,
+    initialValueType: 'en',
+    format: "YYYY/MM/DD",
+    autoClose: true
+});
+
+
+$("#send").click(function () {
+        document.location = "/hotels";
+    });
+
+
+
+</script>
+
 @endsection

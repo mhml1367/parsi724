@@ -391,36 +391,36 @@
                 <div class="p-4 shadow ml-lg-4 rounded sticky-top" style="top: 15px;">
                     <form action="{{ route('post.hotels.booking') }}" method="POST">
                         @csrf
-                    <div id="titleRooms">اتاق انتخاب کنید</div>
+                    <div id="titleRooms">لطفا اتاق انتخاب کنید</div>
                     <div class="row" id="contracts"></div>
                     <hr class="my-4">
                         <div class="row">
                             <div class="col">
                             <div class="form-group">
                                 <label for="bookingDate" class="form-label">نام</label>
-                                <input type="text" name="first_name" class="form-control">
+                                <input type="text" name="first_name" required class="form-control">
                             </div>
                             </div>
                             <div class="col">
                             <div class="form-group">
                                 <label for="bookingDate" class="form-label">نام خانوادگی</label>
-                                <input type="text" name="last_name" class="form-control" >
+                                <input type="text" name="last_name" required class="form-control" >
                             </div>
                         </div>
                         </div>
                         <div class="form-group">
                             <label for="bookingDate" class="form-label">کد ملی</label>
-                            <input type="text" name="national_code" class="form-control" >
+                            <input type="text" name="national_code" required class="form-control" >
                         </div>
                         <div class="form-group">
                             <label for="bookingDate" class="form-label">موبایل</label>
-                            <input type="text" name="phone_number" class="form-control" >
+                            <input type="text" name="phone_number" required class="form-control" >
                         </div>
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
                                     <label for="bookingDate" class="form-label">شهر مبدا</label>
-                                    <input type="text" name="city" class="form-control">
+                                    <input type="text" name="city" required class="form-control">
                                 </div>
                             </div>
                             <div class="col">
@@ -433,13 +433,14 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" id="date1" name="date1">
+                        <input type="hidden" id="date1" required name="date1">
                         <input type="hidden" id="date2" name="date2">
                         <input type="hidden" id="roomid" name="roomid">
                         <input type="hidden" id="hotelid" name="hotelid">
                         <input type="hidden" id="contract" name="contract">
-                        <input type="hidden" id="price" name="price">
+                        <input type="hidden" id="price" required name="price">
                         <input type="hidden" id="room" name="room">
+                        <input type="hidden" id="hotel" name="hotel">
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block">رزرو و تایید</button>
                         </div>
@@ -513,6 +514,7 @@ var DateEnd = "";
 
     var rooms = [];
     var hotelid = "";
+    var hotel = "";
 function DataHotel(dataSend) {
     $('html,body').animate({ scrollTop: 500 }, 'slow');
     $.ajax({
@@ -528,6 +530,7 @@ function DataHotel(dataSend) {
 
             FIELD= "";
             hotelid= D["data"]["id"];
+            hotel= D["data"]["name"];
             rooms = D["data"]["rooms"];
             for (i = 0; i < D["data"]["rooms"].length; i++)
             {
@@ -642,6 +645,7 @@ function DataHotel(dataSend) {
         document.getElementById("date2").value = DateEnd;
         document.getElementById("roomid").value = rooms[id].id;
         document.getElementById("hotelid").value = hotelid;
+        document.getElementById("hotel").value = hotel;
         document.getElementById("price").value = price;
         document.getElementById("contract").value = stay +" "+ breakfast +" "+ lunch +" "+ dinner;
         document.getElementById("room").value = rooms[id]["name"];

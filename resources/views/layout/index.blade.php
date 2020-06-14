@@ -9,6 +9,8 @@
     <link href="/index_files/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
     <link href="http://travelgo.iranneginhotel.ir/images/favicon.png" rel="shortcut icon" type="image/png">
     <title>برو سفر</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+
 </head>
 
 <body>

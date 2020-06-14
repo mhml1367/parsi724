@@ -36,23 +36,11 @@
                                         <td>{{$rec->city}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="bookex">اتاق:</td>
-                                        <td>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="bookex">اقامت:</td>
-                                        <td>
-                                        </td>
-                                    </tr>
-                                    <tr>
                                         <td class="bookex">جمع مبلغ پرداختی</td>
                                         <td>
-                                        مبلغ: {{$rec->price}}
+                                        ریال: {{$rec->price}}
                                         </td>
                                     </tr>
-
-
                                 </tbody>
                             </table>
 
@@ -80,16 +68,16 @@
                         <div class="TravelGo-category-content fl-wrap title-sin_item">
                             <div class="TravelGo-category-content-title fl-wrap">
                                 <div class="TravelGo-category-content-title-item">
-                                    <h3 class="title-sin_map"><a href="hotel-detailed.html">{{$rec->room}}</a></h3>
+                                    <h3 class="title-sin_map"><a href="#">{{$rec->hotel}}</a></h3>
                                     <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i
-                                                class="fas fa-map-marker-alt"></i>{{$rec->hotel}}</a>
+                                                class="fas fa-map-marker-alt"></i>{{$rec->room}}</a>
                                         <span>{{$rec->price}}</span><a href="#" class="map-item"></a><span></span> </div>
                                 </div>
                             </div>
-                            
-                            
+
+
                             <div class="TravelGo-category-content-title-item others-details">
-                                <h3 class="title-sin_map"><a href="hotel-detailed.html">جزئیات رزرو</a></h3>
+                                <h3 class="title-sin_map"><a href="#">جزئیات رزرو</a></h3>
                             </div>
                             <table class="table table-striped">
                                 <tbody>
@@ -101,7 +89,7 @@
                                         <td class="bookex">اقامت:</td>
                                         <td>{{$rec->contract}}</td>
                                     </tr>
-                                
+
                                 </tbody>
                             </table>
                         </div>
@@ -140,9 +128,9 @@
 @section('javascript')
 <script>
     $("#send").click(function () {
-            jQuery.ajaxSetup({
+            $.ajaxSetup({
                 headers: {
-                    'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
         $.ajax({
