@@ -143,13 +143,13 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
                                 <div class="form-group"> <span class="far fa-calendar-alt"></span>
-                                    <input class="form-control hasDatepicker" type="text" id="date-picker"
+                                    <input class="form-control hasDatepicker" type="text" value="{{request()->input('DateFrom')}}" id="date-picker"
                                         autocomplete="off" placeholder="تاریخ ورود">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
                                 <div class="form-group"> <span class="far fa-calendar-alt"></span>
-                                    <input class="form-control hasDatepicker" type="text" id="date-picker-out"
+                                    <input class="form-control hasDatepicker" type="text" value="{{request()->input('DateEnd')}}" id="date-picker-out"
                                         autocomplete="off" placeholder="تاریخ خروج">
                                 </div>
                             </div>
@@ -466,13 +466,13 @@
 
 <script>
 $('#date-picker').persianDatepicker({
-    initialValue: true,
+    initialValue: false,
     initialValueType: 'en',
     format: "YYYY/MM/DD",
     autoClose: true
 });
 $('#date-picker-out').persianDatepicker({
-    initialValue: true,
+    initialValue: false,
     initialValueType: 'en',
     format: "YYYY/MM/DD",
     autoClose: true

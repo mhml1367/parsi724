@@ -23,13 +23,13 @@
               <div class="mb-left">
                 <label for="form_dates" class="form-label">تاریخ</label>
                 <div class="form-group">
-                  <input class="form-control hasDatepicker" type="text" id="date-picker" autocomplete="off" placeholder="انتخاب تاریخ">
+                  <input class="form-control hasDatepicker" type="text" id="date-picker" autocomplete="off"  value="{{request()->input('DateFrom')}}" placeholder="انتخاب تاریخ">
                 </div>
               </div>
               <div class="mb-left">
                 <label for="form_dates" class="form-label">تاریخ</label>
                 <div class="form-group">
-                  <input class="form-control hasDatepicker" type="text" id="date-picker-out" autocomplete="off" placeholder="انتخاب تاریخ">
+                  <input class="form-control hasDatepicker" type="text" id="date-picker-out" autocomplete="off"  value="{{request()->input('DateEnd')}}" placeholder="انتخاب تاریخ">
                 </div>
               </div>
               <div class="mb-left">
@@ -71,14 +71,16 @@
 <script src="/js/persian-datepicker.js"></script>
 
 <script>
+  var dateOne1 = {{request()->input('DateFrom')}};
+  var dateTow1 = {{request()->input('DateEnd')}};
+  var city = {{cityy}};
+  
 $('#date-picker').persianDatepicker({
-    initialValue: true,
     initialValueType: 'en',
     format: "YYYY/MM/DD",
     autoClose: true
 });
 $('#date-picker-out').persianDatepicker({
-    initialValue: true,
     initialValueType: 'en',
     format: "YYYY/MM/DD",
     autoClose: true
@@ -92,6 +94,23 @@ function parseArabic(str) {
     }) );
 }
 
+    dateOn = dateOne1.split("/");
+    dateOne = parseArabic(dateOn[0])+"/"+parseArabic(dateOn[1])+"/"+parseArabic(dateOn[2]);
+    document.getElementById("date-picker").val = dateOne;
+
+    dateTo = dateTow1.split("/");
+    dateTow = parseArabic(dateTo[0])+"/"+parseArabic(dateTo[1])+"/"+parseArabic(dateTo[2]);
+    document.getElementById("date-picker-out").val = dateTow;
+
+    if (city == null) {
+        dataSend = {
+            token: "mzoc1CEq401565108119FTd7QvbGea",
+            from : dateOne,
+            to : dateTow,
+            city_name_en: city,
+        };
+        DataHotel(dataSend);
+      }
   $("#sub").click(function () {
     fetchHotels()
     });

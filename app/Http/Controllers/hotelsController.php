@@ -7,27 +7,13 @@ use Illuminate\Filesystem\Cache;
 
 class hotelsController extends Controller
 {
-    public function index($city1 = null)
+    public function index($ccity = null)
     {
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://recepshen.ir/api/fetchHotels?city_name_en=".$city1."&token=mzoc1CEq401565108119FTd7QvbGea");
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'Content-Type: application/json',
-        ]);
-
-        $response = json_decode(curl_exec($ch));
-        // dd($response);
-        $rec = $response->data;
-
-
+        $cityy = $ccity;
         $city = city();
         $hotelTypes = hotelTypes();
         $hotelSpecifications = hotelSpecifications();
-        return view('hotel/hotels',compact('rec','city','hotelTypes','hotelSpecifications'));
+        return view('hotel/hotels',compact('cityy','city','hotelTypes','hotelSpecifications'));
 
     }
 

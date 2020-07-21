@@ -38,7 +38,7 @@
                                         <div class="form-group"><span class="fas fa-map-marker-alt"></span>
                                             <select class="custom-select select-big mb-3" id="city" name="option">
                                                 @foreach ($city as $item)
-                                                <option value="{{$item->id}}">{{$item->name}}</option>
+                                                <option value="{{$item->name_en}}">{{$item->name}}</option>
                                                 @endforeach
                                             </select>                                        </div>
                                     </div>
@@ -1116,7 +1116,10 @@ $('#date-picker-out').persianDatepicker({
 
 
 $("#send").click(function () {
-        document.location = "/hotels";
+    city = document.getElementById("city").value;
+    DateFrom = document.getElementById("date-picker").value;
+    DateEnd = document.getElementById("date-picker-out").value;
+        document.location = "/hotels/" + city +"?DateFrom=" + DateFrom +"&DateEnd=" + DateEnd ;
     });
 
 
