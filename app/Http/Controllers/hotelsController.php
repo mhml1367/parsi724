@@ -7,13 +7,12 @@ use Illuminate\Filesystem\Cache;
 
 class hotelsController extends Controller
 {
-    public function index($ccity = null)
+    public function index($oneCity = null)
     {
-        $cityy = $ccity;
         $city = city();
         $hotelTypes = hotelTypes();
         $hotelSpecifications = hotelSpecifications();
-        return view('hotel/hotels',compact('cityy','city','hotelTypes','hotelSpecifications'));
+        return view('hotel/hotels',compact('oneCity','city','hotelTypes','hotelSpecifications'));
 
     }
 

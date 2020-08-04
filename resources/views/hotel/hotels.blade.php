@@ -23,13 +23,13 @@
               <div class="mb-left">
                 <label for="form_dates" class="form-label">تاریخ</label>
                 <div class="form-group">
-                  <input class="form-control hasDatepicker" type="text" id="date-picker" autocomplete="off"  value="{{request()->input('DateFrom')}}" placeholder="انتخاب تاریخ">
+                  <input class="form-control" type="text" id="date-picker"  value="{{request()->input('DateFrom')}}">
                 </div>
               </div>
               <div class="mb-left">
                 <label for="form_dates" class="form-label">تاریخ</label>
                 <div class="form-group">
-                  <input class="form-control hasDatepicker" type="text" id="date-picker-out" autocomplete="off"  value="{{request()->input('DateEnd')}}" placeholder="انتخاب تاریخ">
+                  <input class="form-control" type="text" id="date-picker-out"  value="{{request()->input('DateEnd')}}">
                 </div>
               </div>
               <div class="mb-left">
@@ -40,7 +40,7 @@
               </div>
 
                 <div class="mb-left">
-                  <button id="sub" class="btn btn-primary btn-grad FilterBtn"> <i class="fas fa-filter mr-1"></i>فیلتر </button>
+                  <div id="sub" class="btn btn-primary btn-grad FilterBtn"> <i class="fas fa-filter mr-1"></i>فیلتر </div>
                 </div>
             </form>
           </div>
@@ -71,21 +71,10 @@
 <script src="/js/persian-datepicker.js"></script>
 
 <script>
-  var dateOne1 = {{request()->input('DateFrom')}};
-  var dateTow1 = {{request()->input('DateEnd')}};
-  var city = {{cityy}};
+  var dateOne1 = "{{request()->input('DateFrom')}}";
+  var dateTow1 = "{{request()->input('DateEnd')}}";
+  var city = "{{$oneCity}}";
   
-$('#date-picker').persianDatepicker({
-    initialValueType: 'en',
-    format: "YYYY/MM/DD",
-    autoClose: true
-});
-$('#date-picker-out').persianDatepicker({
-    initialValueType: 'en',
-    format: "YYYY/MM/DD",
-    autoClose: true
-});
-
 function parseArabic(str) {
     return Number( str.replace(/[٠١٢٣٤٥٦٧٨٩]/g, function(d) {
         return d.charCodeAt(0) - 1632; // Convert Arabic numbers
@@ -94,15 +83,46 @@ function parseArabic(str) {
     }) );
 }
 
-    dateOn = dateOne1.split("/");
-    dateOne = parseArabic(dateOn[0])+"/"+parseArabic(dateOn[1])+"/"+parseArabic(dateOn[2]);
+
+  if (dateOne1 != "") {
+  
+    DateF = dateOne1;
+    DateS = DateF.split("/");
+    if(parseArabic(DateS[1]).toString().length == 1)
+      {
+        MotOne = "0"+parseArabic(DateS[1]);
+      }else{
+        MotOne = parseArabic(DateS[1]);
+    }
+    if(parseArabic(DateS[2]).toString().length == 1)
+      {
+        DayOne = "0"+parseArabic(DateS[2]);
+      }else{
+        DayOne = parseArabic(DateS[2]);
+    }
+    dateOne = parseArabic(DateS[0])+"/"+MotOne+"/"+DayOne;
+
     document.getElementById("date-picker").val = dateOne;
 
-    dateTo = dateTow1.split("/");
-    dateTow = parseArabic(dateTo[0])+"/"+parseArabic(dateTo[1])+"/"+parseArabic(dateTo[2]);
+    DateF1 = dateTow1;
+    DateS1 = DateF1.split("/");
+    if(parseArabic(DateS1[1]).toString().length == 1)
+      {
+        MotTow = "0"+parseArabic(DateS[1]);
+      }else{
+        MotTow = parseArabic(DateS[1]);
+    }
+    if(parseArabic(DateS1[2]).toString().length == 1)
+      {
+        DayTow = "0"+parseArabic(DateS1[2]);
+      }else{
+        DayTow = parseArabic(DateS1[2]);
+    }
+    dateTow = parseArabic(DateS1[0])+"/"+MotTow+"/"+DayTow;
+
     document.getElementById("date-picker-out").val = dateTow;
 
-    if (city == null) {
+    if (city != null) {
         dataSend = {
             token: "mzoc1CEq401565108119FTd7QvbGea",
             from : dateOne,
@@ -111,6 +131,8 @@ function parseArabic(str) {
         };
         DataHotel(dataSend);
       }
+  }
+
   $("#sub").click(function () {
     fetchHotels()
     });

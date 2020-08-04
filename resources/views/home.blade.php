@@ -44,38 +44,16 @@
                                     </div>
                                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group"><span class="far fa-calendar-alt"></span>
-                                            <input class="form-control hasDatepicker" type="text" id="date-picker" autocomplete="off" placeholder="تاریخ ورود">
+                                            <input class="form-control" type="text" id="date-picker">
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group"><span class="far fa-calendar-alt"></span>
-                                            <input class="form-control hasDatepicker" type="text" id="date-picker-out" autocomplete="off" placeholder="تاریخ خروج">
+                                            <input class="form-control" type="text" id="date-picker-out">
                                         </div>
                                     </div>
-                                    <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 padding8">
-                                        <div class="form-group">
-                                            <select class="custom-select select-big">
-                                                <option selected="">اتاقها</option>
-                                                <option value="location1">01</option>
-                                                <option value="location2">02</option>
-                                                <option value="location3">03</option>
-                                                <option value="location4">04</option>
-                                                <option value="location5">05</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 padding8">
-                                        <div class="form-group">
-                                            <select class="custom-select select-big">
-                                                <option selected="">مهمان</option>
-                                                <option value="location1">01</option>
-                                                <option value="location2">02</option>
-                                                <option value="location3">03</option>
-                                                <option value="location4">04</option>
-                                                <option value="location5">05</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                    
+                        
                                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group">
                                             <button class="btn btn-primary btn-lg btn-grad" id="send">جستجو کردن
@@ -1101,19 +1079,7 @@
 <script src="/js/persian-datepicker.js"></script>
 
 <script>
-$('#date-picker').persianDatepicker({
-    initialValue: true,
-    initialValueType: 'en',
-    format: "YYYY/MM/DD",
-    autoClose: true
-});
-$('#date-picker-out').persianDatepicker({
-    initialValue: true,
-    initialValueType: 'en',
-    format: "YYYY/MM/DD",
-    autoClose: true
-});
-
+$('#date-picker').datepicker()
 
 $("#send").click(function () {
     city = document.getElementById("city").value;
