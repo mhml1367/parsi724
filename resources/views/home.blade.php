@@ -44,12 +44,12 @@
                                     </div>
                                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group"><span class="far fa-calendar-alt"></span>
-                                            <input class="form-control" type="text" id="date-picker">
+                                            <input class="form-control" type="text" id="date-picker" placeholder="تاریخ ورود">
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
                                         <div class="form-group"><span class="far fa-calendar-alt"></span>
-                                            <input class="form-control" type="text" id="date-picker-out">
+                                            <input class="form-control" type="text" id="date-picker-out" placeholder="تاریخ خروج">
                                         </div>
                                     </div>
                     
@@ -208,11 +208,11 @@
                     <p class="subtitle text-secondary nopadding">بیشترین تعداد سرمایه ها</p>
                     <h1 class="paddtop1 font-weight lspace-sm">مقصد محبوب</h1>
                 </div>
-                <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="http://travelgo.iranneginhotel.ir/#" class="blist text-sm ml-2"> همه
+                <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#" class="blist text-sm ml-2"> همه
                     شهرها را ببینید<i class="fas fa-angle-double-left ml-2"></i></a></div>
             </div>
             <div class="row">
-                <div class="col-md-6"><a href="http://travelgo.iranneginhotel.ir/#">
+                <div class="col-md-6"><a href="#">
                     <div class="list-mig-like-com">
                         <div class="list-mig-lc-img"><img src="./index_files/home.jpg" alt=""></div>
                         <div class="list-mig-lc-con">
@@ -223,7 +223,7 @@
                 </a></div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6"><a href="http://travelgo.iranneginhotel.ir/#">
+                        <div class="col-md-6"><a href="#">
                             <div class="list-mig-like-com">
                                 <div class="list-mig-lc-img"><img src="./index_files/home2.jpg" alt=""></div>
                                 <div class="list-mig-lc-con list-mig-lc-con2">
@@ -232,7 +232,7 @@
                                 </div>
                             </div>
                         </a></div>
-                        <div class="col-md-6"><a href="http://travelgo.iranneginhotel.ir/#">
+                        <div class="col-md-6"><a href="#">
                             <div class="list-mig-like-com">
                                 <div class="list-mig-lc-img"><img src="./index_files/home3.jpg" alt=""></div>
                                 <div class="list-mig-lc-con list-mig-lc-con2">
@@ -241,7 +241,7 @@
                                 </div>
                             </div>
                         </a></div>
-                        <div class="col-md-6"><a href="http://travelgo.iranneginhotel.ir/#">
+                        <div class="col-md-6"><a href="#">
                             <div class="list-mig-like-com">
                                 <div class="list-mig-lc-img"><img src="./index_files/home4.jpg" alt=""></div>
                                 <div class="list-mig-lc-con list-mig-lc-con2">
@@ -250,7 +250,7 @@
                                 </div>
                             </div>
                         </a></div>
-                        <div class="col-md-6"><a href="http://travelgo.iranneginhotel.ir/#">
+                        <div class="col-md-6"><a href="#">
                             <div class="list-mig-like-com">
                                 <div class="list-mig-lc-img"><img src="./index_files/home1.jpg" alt=""></div>
                                 <div class="list-mig-lc-con list-mig-lc-con2">
@@ -311,20 +311,20 @@
                     <p class="subtitle text-secondary nopadding">مانند محلی بمانید و بخورید</p>
                     <h1 class="paddtop1 font-weight lspace-sm">هتل های معروف</h1>
                 </div>
-                <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="http://travelgo.iranneginhotel.ir/#" class="blist text-sm ml-2"> مشاهده
+                <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#" class="blist text-sm ml-2"> مشاهده
                     همه هتل ها<i class="fas fa-angle-double-left ml-2"></i></a></div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="listroBox">
-                        <figure><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html" class="wishlist_bt"></a> <a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/room5.jpg" class="img-fluid" alt="">
+                        <figure><a href="#" class="wishlist_bt"></a> <a href="#"><img src="./index_files/room5.jpg" class="img-fluid" alt="">
                             <div class="read_more"><span>بیشتر بخوانید</span></div>
                         </a></figure>
                         <div class="listroBoxmain">
-                            <h3><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                            <h3><a href="#">اتاق مدرن و مرتب</a></h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
                             </p>
-                            <a class="address" href="http://travelgo.iranneginhotel.ir/#">دریافت جهات</a></div>
+                            <a class="address" href="#">دریافت جهات</a></div>
                         <ul>
                             <li>
                                 <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
@@ -339,14 +339,14 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="listroBox">
-                        <figure><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html" class="wishlist_bt"></a> <a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/room1.jpg" class="img-fluid" alt="">
+                        <figure><a href="#" class="wishlist_bt"></a> <a href="#"><img src="./index_files/room1.jpg" class="img-fluid" alt="">
                             <div class="read_more"><span>بیشتر بخوانید</span></div>
                         </a></figure>
                         <div class="listroBoxmain">
-                            <h3><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                            <h3><a href="#">اتاق مدرن و مرتب</a></h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
                                 است</p>
-                            <a class="address" href="http://travelgo.iranneginhotel.ir/#">دریافت جهات</a></div>
+                            <a class="address" href="#">دریافت جهات</a></div>
                         <ul>
                             <li>
                                 <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
@@ -361,14 +361,14 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="listroBox">
-                        <figure><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html" class="wishlist_bt"></a> <a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/room2.jpg" class="img-fluid" alt="">
+                        <figure><a href="#" class="wishlist_bt"></a> <a href="#"><img src="./index_files/room2.jpg" class="img-fluid" alt="">
                             <div class="read_more"><span>بیشتر بخوانید</span></div>
                         </a></figure>
                         <div class="listroBoxmain">
-                            <h3><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                            <h3><a href="#">اتاق مدرن و مرتب</a></h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
                                 است</p>
-                            <a class="address" href="http://travelgo.iranneginhotel.ir/#">دریافت جهات</a></div>
+                            <a class="address" href="#">دریافت جهات</a></div>
                         <ul>
                             <li>
                                 <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
@@ -383,14 +383,14 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="listroBox">
-                        <figure><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html" class="wishlist_bt"></a> <a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/room7.jpg" class="img-fluid" alt="">
+                        <figure><a href="#" class="wishlist_bt"></a> <a href="#"><img src="./index_files/room7.jpg" class="img-fluid" alt="">
                             <div class="read_more"><span>بیشتر بخوانید</span></div>
                         </a></figure>
                         <div class="listroBoxmain">
-                            <h3><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                            <h3><a href="#">اتاق مدرن و مرتب</a></h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
                                 است</p>
-                            <a class="address" href="http://travelgo.iranneginhotel.ir/#">دریافت جهات</a></div>
+                            <a class="address" href="#">دریافت جهات</a></div>
                         <ul>
                             <li>
                                 <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
@@ -405,14 +405,14 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="listroBox">
-                        <figure><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html" class="wishlist_bt"></a> <a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/room8.jpg" class="img-fluid" alt="">
+                        <figure><a href="#" class="wishlist_bt"></a> <a href="#"><img src="./index_files/room8.jpg" class="img-fluid" alt="">
                             <div class="read_more"><span>بیشتر بخوانید</span></div>
                         </a></figure>
                         <div class="listroBoxmain">
-                            <h3><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                            <h3><a href="#">اتاق مدرن و مرتب</a></h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
                                 است</p>
-                            <a class="address" href="http://travelgo.iranneginhotel.ir/#">دریافت جهات</a></div>
+                            <a class="address" href="#">دریافت جهات</a></div>
                         <ul>
                             <li>
                                 <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
@@ -427,14 +427,14 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="listroBox">
-                        <figure><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html" class="wishlist_bt"></a> <a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/room6.jpg" class="img-fluid" alt="">
+                        <figure><a href="#" class="wishlist_bt"></a> <a href="#"><img src="./index_files/room6.jpg" class="img-fluid" alt="">
                             <div class="read_more"><span>بیشتر بخوانید</span></div>
                         </a></figure>
                         <div class="listroBoxmain">
-                            <h3><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                            <h3><a href="#">اتاق مدرن و مرتب</a></h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
                                 است</p>
-                            <a class="address" href="http://travelgo.iranneginhotel.ir/#">دریافت جهات</a></div>
+                            <a class="address" href="#">دریافت جهات</a></div>
                         <ul>
                             <li>
                                 <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
@@ -473,7 +473,7 @@
                         <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
                             از طراحان گرافیک است.
                         </p>
-                        <a class="mt-3" href="http://travelgo.iranneginhotel.ir/#">بیشتر ببین!</a></div>
+                        <a class="mt-3" href="#">بیشتر ببین!</a></div>
                 </div>
                 <div class="col-md-4 mt-30">
                     <div class="featureBox icon-grad h-100">
@@ -482,7 +482,7 @@
                         <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
                             از طراحان گرافیک است.
                         </p>
-                        <a class="mt-3" href="http://travelgo.iranneginhotel.ir/#">بیشتر ببین!</a></div>
+                        <a class="mt-3" href="#">بیشتر ببین!</a></div>
                 </div>
                 <div class="col-md-4 mt-30">
                     <div class="featureBox icon-grad h-100">
@@ -491,7 +491,7 @@
                         <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
                             از طراحان گرافیک است.
                         </p>
-                        <a class="mt-3" href="http://travelgo.iranneginhotel.ir/#">بیشتر ببین!</a></div>
+                        <a class="mt-3" href="#">بیشتر ببین!</a></div>
                 </div>
             </div>
         </div>
@@ -506,7 +506,7 @@
                     <p class="subtitle text-secondary nopadding">مانند محلی بمانید و بخورید</p>
                     <h1 class="paddtop1 font-weight lspace-sm">آخرین سفرهای دریایی</h1>
                 </div>
-                <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="http://travelgo.iranneginhotel.ir/#" class="blist text-sm ml-2"> مشاهده
+                <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#" class="blist text-sm ml-2"> مشاهده
                     همه سفرهای دریایی<i class="fas fa-angle-double-left ml-2"></i></a></div>
             </div>
             <div class="row">
@@ -515,7 +515,7 @@
                     <div class="swiper-wrapper" style="transform: translate3d(1155px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide h-auto px-2 swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/4.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/4.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -526,10 +526,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -542,8 +542,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -552,7 +552,7 @@
                         </div><div class="swiper-slide h-auto px-2 swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/5.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/5.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -563,10 +563,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -579,8 +579,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -589,7 +589,7 @@
                         </div><div class="swiper-slide h-auto px-2 swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/6.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/6.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -600,10 +600,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -616,8 +616,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -629,7 +629,7 @@
                         <div class="swiper-slide h-auto px-2 swiper-slide-active" data-swiper-slide-index="0" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/1.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/1.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -640,10 +640,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -656,8 +656,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -667,7 +667,7 @@
                         <div class="swiper-slide h-auto px-2 swiper-slide-next" data-swiper-slide-index="1" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/2.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/2.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -678,10 +678,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -694,8 +694,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -705,7 +705,7 @@
                         <div class="swiper-slide h-auto px-2" data-swiper-slide-index="2" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/3.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/3.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -716,10 +716,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -732,8 +732,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -743,7 +743,7 @@
                         <div class="swiper-slide h-auto px-2" data-swiper-slide-index="3" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/4.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/4.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -754,10 +754,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -770,8 +770,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -781,7 +781,7 @@
                         <div class="swiper-slide h-auto px-2" data-swiper-slide-index="4" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/5.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/5.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -792,10 +792,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -808,8 +808,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -819,7 +819,7 @@
                         <div class="swiper-slide h-auto px-2 swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/6.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/6.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -830,10 +830,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -846,8 +846,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -857,7 +857,7 @@
                     <div class="swiper-slide h-auto px-2 swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/1.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/1.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -868,10 +868,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -884,8 +884,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -894,7 +894,7 @@
                         </div><div class="swiper-slide h-auto px-2 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/2.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/2.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -905,10 +905,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -921,8 +921,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -931,7 +931,7 @@
                         </div><div class="swiper-slide h-auto px-2 swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 370px; margin-left: 15px;">
                             <div class="listing-item ">
                                 <article class="TravelGo-category-listing fl-wrap">
-                                    <div class="TravelGo-category-img"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html"><img src="./index_files/3.jpg" alt=""></a>
+                                    <div class="TravelGo-category-img"><a href="#"><img src="./index_files/3.jpg" alt=""></a>
                                         <div class="TravelGo-category-opt">
                                             <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                                             <div class="rate-class-name">
@@ -942,10 +942,10 @@
                                     <div class="TravelGo-category-content fl-wrap title-sin_item">
                                         <div class="TravelGo-category-content-title fl-wrap">
                                             <div class="TravelGo-category-content-title-item">
-                                                <h3 class="title-sin_map"><a href="http://travelgo.iranneginhotel.ir/hotel-detailed.html">کروز آسیا و
+                                                <h3 class="title-sin_map"><a href="#">کروز آسیا و
                                                     آفریقا</a></h3>
-                                                <div class="TravelGo-category-location fl-wrap"><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
-                                                    <span>200 تومان </span><a href="http://travelgo.iranneginhotel.ir/#" class="map-item"></a><span></span></div>
+                                                <div class="TravelGo-category-location fl-wrap"><a href="#" class="map-item"><i class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                    <span>200 تومان </span><a href="#" class="map-item"></a><span></span></div>
                                             </div>
                                         </div>
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
@@ -958,8 +958,8 @@
                                         </ul>
                                         <div class="TravelGo-category-footer fl-wrap">
                                             <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
-                                            <div class="TravelGo-opt-list"><a href="http://travelgo.iranneginhotel.ir/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
-                                                <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="http://travelgo.iranneginhotel.ir/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                            <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                                <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -983,83 +983,31 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">1</span> <span class="d-block mb-4"><i class="fas fa-road display-2 text-grad"></i></span> <a class="h5" href="http://travelgo.iranneginhotel.ir/#">رزرو راه
+                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">1</span> <span class="d-block mb-4"><i class="fas fa-road display-2 text-grad"></i></span> <a class="h5" href="#">رزرو راه
                         آهن</a></div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">2</span> <span class="d-block mb-4"><i class="fas fa-utensils display-2 text-grad"></i></span> <a class="h5" href="http://travelgo.iranneginhotel.ir/#">رزرو
+                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">2</span> <span class="d-block mb-4"><i class="fas fa-utensils display-2 text-grad"></i></span> <a class="h5" href="#">رزرو
                         هتل</a></div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">3</span> <span class="d-block mb-4"><i class="fas fa-ticket-alt display-2 text-grad"></i></span> <a class="h5" href="http://travelgo.iranneginhotel.ir/#">رزرو
+                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">3</span> <span class="d-block mb-4"><i class="fas fa-ticket-alt display-2 text-grad"></i></span> <a class="h5" href="#">رزرو
                         بلیط</a></div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">4</span> <span class="d-block mb-4"><i class="fas fa-child display-2 text-grad"></i></span> <a class="h5" href="http://travelgo.iranneginhotel.ir/#">تور
+                    <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span class="alt-font text-light-gray display-2 font-italic opacity-2">4</span> <span class="d-block mb-4"><i class="fas fa-child display-2 text-grad"></i></span> <a class="h5" href="#">تور
                         شگفت انگیز</a></div>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <section class="pricing pricing-center whiteBG pb60">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8 mx-auto mb-5">
-                    <div class="title text-center">
-                        <h2> بسته های قیمت گذاری</h2>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- pricing item -->
-                <div class="col-md-4">
-                    <div class="pricing-box h-100">
-                        <h5>بسته ماه عسل</h5>
-                        <div class="plan-price"><span class="price text-grad"> <sup class="text-grad"></sup>20 <sup class="text-grad">تومان</sup></span> در روز
-                        </div>
-                        <p>4 شب در مجموعه هانی مون. <br>
-                            انتقال فرودگاه لوکس خصوصی. <br>
-                            صبحانه روزانه سوئیت خود را.</p>
-                        <a class="btn btn-outline-light mt-4" href="http://travelgo.iranneginhotel.ir/#!">اکنون سفارش دهید!</a></div>
-                </div>
-                <!-- pricing item -->
-                <div class="col-md-4 ">
-                    <div class="pricing-box h-100 shadow no-border box">
-                        <div class="ribbon"><span>محبوب</span></div>
-                        <h5>بسته خانواده</h5>
-                        <div class="plan-price"><span class="price text-grad"> <sup class="text-grad"></sup>50 <sup class="text-grad">تومان</sup></span> در روز
-                        </div>
-                        <p>4 شب در مجموعه هانی مون. <br>
-                            انتقال فرودگاه لوکس خصوصی. <br>
-                            صبحانه روزانه سوئیت خود را.</p>
-                        <a class="btn btn-grad mt-4" href="http://travelgo.iranneginhotel.ir/#!">اکنون سفارش دهید!</a></div>
-                </div>
-                <!-- pricing item -->
-                <div class="col-md-4">
-                    <div class="pricing-box h-100">
-                        <h5>همه فراگیر</h5>
-                        <div class="plan-price"><span class="price text-grad"> <sup class="text-grad"></sup>99 <sup class="text-grad">تومان</sup></span> در روز
-                        </div>
-                        <p>4 شب در مجموعه هانی مون. <br>
-                            انتقال فرودگاه لوکس خصوصی. <br>
-                            صبحانه روزانه سوئیت خود را.</p>
-                        <a class="btn btn-outline-light mt-4" href="http://travelgo.iranneginhotel.ir/#!">اکنون سفارش دهید!</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- =======================
         newsletter -->
     <section class="bg-light pattern-overlay-1-dark">
         <div class="container">
             <div class="col-md-12 col-lg-9 mx-auto p-4 p-sm-5">
                 <div class="text-center px-0 px-sm-5">
-                    <p class="mb-3 lead">21،215+ هتل و اقامتگاه های موجود!</p>
+                    <p class="mb-3 lead">1،215+ هتل و اقامتگاه های موجود!</p>
                     <form>
                         <div class="input-group px-0 px-md-5">
                             <input class="form-control border-radius-right-0 border-right-0 bg-transparent" type="text" name="search" placeholder="جستجو مقصد">
@@ -1079,8 +1027,6 @@
 <script src="/js/persian-datepicker.js"></script>
 
 <script>
-$('#date-picker').datepicker()
-
 $("#send").click(function () {
     city = document.getElementById("city").value;
     DateFrom = document.getElementById("date-picker").value;

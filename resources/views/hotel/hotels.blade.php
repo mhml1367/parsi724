@@ -23,13 +23,13 @@
               <div class="mb-left">
                 <label for="form_dates" class="form-label">تاریخ</label>
                 <div class="form-group">
-                  <input class="form-control" type="text" id="date-picker"  value="{{request()->input('DateFrom')}}">
+                  <input class="form-control" type="text" id="date-picker" value="{{request()->input('DateFrom')}}" placeholder="تاریخ ورودی">
                 </div>
               </div>
               <div class="mb-left">
                 <label for="form_dates" class="form-label">تاریخ</label>
                 <div class="form-group">
-                  <input class="form-control" type="text" id="date-picker-out"  value="{{request()->input('DateEnd')}}">
+                  <input class="form-control" type="text" id="date-picker-out" value="{{request()->input('DateEnd')}}" placeholder="تاریخ خروج">
                 </div>
               </div>
               <div class="mb-left">
@@ -47,7 +47,7 @@
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12">
           <div class="resultBar barSpaceAdjust">
-            <h2 id="title">ما <span>7</span> نتیجه برای شما پیدا کردیم</h2>
+            <h2 id="title">لطفا جستجو نمایید!</h2>
             <ul class="list-inline">
               <li class="active"><a href="cruise-grid-view.html"><i class="fa fa-th" aria-hidden="true"></i></a></li>
               <li><a href="hotel-list-view.html"><i class="fa fa-th-list" aria-hidden="true"></i></a></li>
@@ -122,6 +122,9 @@ function parseArabic(str) {
 
     document.getElementById("date-picker-out").val = dateTow;
 
+    document.getElementById("HOTELS").innerHTML = "";
+    document.getElementById('loading').style.display = "initial";
+    
     if (city != null) {
         dataSend = {
             token: "mzoc1CEq401565108119FTd7QvbGea",
@@ -134,25 +137,17 @@ function parseArabic(str) {
   }
 
   $("#sub").click(function () {
-    fetchHotels()
+      fetchHotels()
     });
-var DateFrom = "";
-var DateEnd = "";
+var DateFrom = $("#date-picker").val();
+var DateEnd = $("#date-picker-out").val();
 
 function fetchHotels() {
     document.getElementById("HOTELS").innerHTML = "";
     document.getElementById('loading').style.display = "initial";
 
-     DateF = $("#date-picker").val();
-     DateS = DateF.split("/");
-     DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
-
-     DateFi = $("#date-picker-out").val();
-     DateSi = DateFi.split("/");
-     DateFroi = parseArabic(DateSi[0])+"/"+parseArabic(DateSi[1])+"/"+parseArabic(DateSi[2]);
-
-     DateFrom = moment(DateFro).format('YYYY/MM/DD');
-     DateEnd = moment(DateFroi).format('YYYY/MM/DD');
+     DateFrom = $("#date-picker").val();
+     DateEnd = $("#date-picker-out").val();
 
         dataSend = {
             token: "mzoc1CEq401565108119FTd7QvbGea",
@@ -173,7 +168,7 @@ function DataHotel(dataSend) {
             if(D["error"] == undefined){
                 if(D["data"].length != 0){
 
-                document.getElementById("title").innerHTML ="<h2>لیست هتل و اقامتگاه های <span>"+ D["data"]["0"]["city"]+"</span></h2>";
+                document.getElementById("title").innerHTML ="<h2>لیست <span>"+D["data"].length+"</span> هتل و اقامتگاه های <span>"+ D["data"]["0"]["city"]+"</span></h2>";
                 document.getElementById('loading').style.display = "none";
 
             var FIELD= "";

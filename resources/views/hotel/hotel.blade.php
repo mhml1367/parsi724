@@ -143,38 +143,14 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
                                 <div class="form-group"> <span class="far fa-calendar-alt"></span>
-                                    <input class="form-control hasDatepicker" type="text" value="{{request()->input('DateFrom')}}" id="date-picker"
+                                    <input class="form-control" type="text" value="{{request()->input('DateFrom')}}" id="date-picker"
                                         autocomplete="off" placeholder="تاریخ ورود">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
                                 <div class="form-group"> <span class="far fa-calendar-alt"></span>
-                                    <input class="form-control hasDatepicker" type="text" value="{{request()->input('DateEnd')}}" id="date-picker-out"
+                                    <input class="form-control" type="text" value="{{request()->input('DateEnd')}}" id="date-picker-out"
                                         autocomplete="off" placeholder="تاریخ خروج">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding8">
-                                <div class="form-group">
-                                    <select class="custom-select select-big">
-                                        <option selected="">اتاقها</option>
-                                        <option value="location1">01</option>
-                                        <option value="location2">02</option>
-                                        <option value="location3">03</option>
-                                        <option value="location4">04</option>
-                                        <option value="location5">05</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding8">
-                                <div class="form-group">
-                                    <select class="custom-select select-big">
-                                        <option selected="">مهمان</option>
-                                        <option value="location1">01</option>
-                                        <option value="location2">02</option>
-                                        <option value="location3">03</option>
-                                        <option value="location4">04</option>
-                                        <option value="location5">05</option>
-                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding8">
@@ -186,7 +162,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h5 class="mb-4" id="title">هتل های موجود</h5>
+                                <h5 class="mb-4" id="title">لطفا جستجو نمایید</h5>
                             </div>
                             <div class="lds-ellipsis" id="loading" style="display: none">
                                 <div></div><div></div><div></div><div></div>
@@ -465,18 +441,6 @@
 <script src="/js/persian-datepicker.js"></script>
 
 <script>
-$('#date-picker').persianDatepicker({
-    initialValue: false,
-    initialValueType: 'en',
-    format: "YYYY/MM/DD",
-    autoClose: true
-});
-$('#date-picker-out').persianDatepicker({
-    initialValue: false,
-    initialValueType: 'en',
-    format: "YYYY/MM/DD",
-    autoClose: true
-});
 
 function parseArabic(str) {
     return Number( str.replace(/[٠١٢٣٤٥٦٧٨٩]/g, function(d) {
@@ -487,21 +451,28 @@ function parseArabic(str) {
 }
 var DateFrom = "";
 var DateEnd = "";
+    if ($("#date-picker").val() != "") {
+        roomSearch();
+    }
 
-  $("#sub").click(function () {
+    $("#sub").click(function () {
+        roomSearch();
+    });
+
+  function roomSearch() {
     document.getElementById("HOTELS").innerHTML = "";
     document.getElementById('loading').style.display = "initial";
 
-     DateF = $("#date-picker").val();
-     DateS = DateF.split("/");
-     DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
+    //  DateF = $("#date-picker").val();
+    //  DateS = DateF.split("/");
+    //  DateFro = parseArabic(DateS[0])+"/"+parseArabic(DateS[1])+"/"+parseArabic(DateS[2]);
 
-     DateFi = $("#date-picker-out").val();
-     DateSi = DateFi.split("/");
-     DateFroi = parseArabic(DateSi[0])+"/"+parseArabic(DateSi[1])+"/"+parseArabic(DateSi[2]);
+    //  DateFi = $("#date-picker-out").val();
+    //  DateSi = DateFi.split("/");
+    //  DateFroi = parseArabic(DateSi[0])+"/"+parseArabic(DateSi[1])+"/"+parseArabic(DateSi[2]);
 
-     DateFrom = moment(DateFro).format('YYYY/MM/DD');
-     DateEnd = moment(DateFroi).format('YYYY/MM/DD');
+     DateFrom = $("#date-picker").val();
+     DateEnd = $("#date-picker-out").val();
 
         dataSend = {
             token: "mzoc1CEq401565108119FTd7QvbGea",
@@ -510,7 +481,7 @@ var DateEnd = "";
             hotel_id: "{{$rec->id}}",
         };
         DataHotel(dataSend);
-    });
+    };
 
     var rooms = [];
     var hotelid = "";
