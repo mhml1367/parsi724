@@ -24,14 +24,14 @@
                         <div class="tab_container">
                             <input id="tab1" type="radio" name="tabs" checked="" wfd-invisible="true">
                             <label for="tab1"><i class="fas fa-utensils"></i><span>هتل ها</span></label>
-                            <input id="tab2" type="radio" name="tabs" wfd-invisible="true">
+                            {{-- <input id="tab2" type="radio" name="tabs" wfd-invisible="true">
                             <label for="tab2"><i class="fas fa-helicopter"></i><span>پروازها</span></label>
                             <input id="tab3" type="radio" name="tabs" wfd-invisible="true">
                             <label for="tab3"><i class="fas fa-car-side"></i><span>ماشین ها</span></label>
                             <input id="tab4" type="radio" name="tabs" wfd-invisible="true">
                             <label for="tab4"><i class="fas fa-ship"></i><span>سفرهای دریایی</span></label>
                             <input id="tab5" type="radio" name="tabs" wfd-invisible="true">
-                            <label for="tab5"><i class="fas fa-route"></i><span>تورها</span></label>
+                            <label for="tab5"><i class="fas fa-route"></i><span>تورها</span></label> --}}
                             <section id="content1" class="tab-content">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding8">
