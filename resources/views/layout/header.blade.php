@@ -32,8 +32,8 @@
                     </div>
                     <!-- Top info -->
                     <ul class="nav list-unstyled ml-3">
-                        <li class="nav-item mr-3"><a class="navbar-link" href="#"><strong>تلفن:</strong>
-                            98-9152040749</a>
+                        <li class="nav-item mr-3"><a class="navbar-link" href="#"><strong>پشتیبانی:</strong>
+                            9152040749 - 98</a>
                         </li>
                         <li class="nav-item mr-3"><a class="navbar-link" href="#"><strong>ایمیل:</strong>
                             info@parsi724.ir</a></li>
@@ -77,6 +77,10 @@
                 <ul class="navbar-nav">
                     <!-- Menu item 1 Demos-->
                     <li class="nav-item dropdown active"><a class="nav-link" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">پارسی</a>
+                    </li>
+                    <li class="nav-item dropdown "><a class="nav-link" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">درباره ما</a>
+                    </li>
+                    <li class="nav-item dropdown "><a class="nav-link" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">تماس باما</a>
                     </li>
                     <!-- Menu item 5 Elements-->
                     {{-- <li class="nav-item dropdown megamenu"><a class="nav-link dropdown-toggle" href="#" id="elementsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">صفحات</a>

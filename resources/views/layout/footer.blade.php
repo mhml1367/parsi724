@@ -9,8 +9,8 @@
                         <img src="/index_files/logo-footer.png">
                         <!-- SVG Logo End -->
                     </a>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است.</p>
+                        <p>تنها سایت تخصصی هتل های مشهد که از سیستم رزرو مستقیم و بدون دخالت کاربر استفاده کرده و بدون هیچگونه نگرانی در هر ساعت شبانه روز می توانید هتل خود را رزرو کنید .
+                            </p>
                     </div>
                 </div>
                 <!-- Footer widget 2 -->
@@ -56,13 +56,13 @@
                 <div class="col-md-3 col-sm-6 order-sm-2">
                     <div class="widget address">
                         <ul class="list-unstyled">
-                            <li class="media mb-3"><i class="fas fa-map-marked-alt mr-3 display-8"></i>تهران-جردن-خیابان نیلوفر</li>
-                            <li class="media mb-3"><i class="mr-3 display-8 fas fa-headphones-alt"></i> 021-9152040749
+                            <li class="media mb-3"><i class="fas fa-map-marked-alt mr-3 display-8"></i>مشهد - بلوار طبرسی - نبش طبرسی 9</li>
+                            <li class="media mb-3"><i class="mr-3 display-8 fas fa-headphones-alt"></i> 98-9152040749
                             </li>
                             <li class="media mb-3"><i class="mr-3 display-8 far fa-envelope"></i> info@parsi724.ir</li>
                             <li class="media mb-3"><i class="mr-3 display-8 far fa-clock"></i>
-                                <p>چهار شنبه تا شنبه: <strong>09:00 - 21:00</strong> <br>
-                                    پنج شنبه و جمعه: <strong>تعطیل است</strong></p>
+                                <p>پشتیبانی 24 ساعته <strong>و بدون تعطیلی</strong> <br>
+                                    </p>
                             </li>
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
                 <!-- copyright text -->
-                <div class="copyright-text">© 2019 کلیه حقوق این سایت توسط <a href="http://parsi724.ir/">پارسی</a> محفوظ است .</div>
+                <div class="copyright-text">کلیه حقوق این سایت محفوظ و متعلق به  <a href="http://parsi724.ir/"></a>شرکت داده پردازان نفیس رستاک هست .</div>
                 <!-- copyright links-->
 
             </div>
